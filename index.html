@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Coffee Trivia Game</title>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/css/style.css" type="text/css">
+	
+</head>
+<body>
+	<script
+  src="https://code.jquery.com/jquery-3.1.1.js"
+  integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
+  crossorigin="anonymous"></script>
+	<script type="text/javascript" src="assets/javascript/app.js"></script>
+	
+	<div class="row">
+			<div class="col-md-5">
+				<div class="imgDiv">
+				<img src="./assets/images/Coffeelogo.png">
+				</div>
+			</div>
+			<div class="col-md-7">
+				<div class="headerImage">
+					<img src="./assets/images/beans.png" height="500px">
+				</div>
+			</div>
+	</div>
+	<div class="row">
+		<div class="col-md-12">
+			<div class="headerSection text-center text">
+					Coffee has a history as long and rich as human recorded history. Test your knowledge of coffee facts with this trivia game!
+			</div>
+		</div>
+			
+	</div>
+	
+	<div class="row">
+		<div id="questionArea">
+			<div class="col-md-4">
+				<img src="./assets/images/farmer.jpg" style="float: left; margin-left: 10px; border-radius: 50px; margin-top: 10px;" height="350px" width="220px">
+			</div>
+			
+			<div class="col-md-8">
+				<h1>The World of Coffee</h1>
+
+				<p id="btnWrapper"><button class="text-center btn btn-default" id="begin">Click to Begin!</button></p>
+
+				<div id="gameStart">	
+					<p class="timeRemaining">Time Remaining: <span id="time">30</span></p>
+
+					<p class="questions"></p>
+					<button class="answers answer1"></p>
+					<button class="answers answer2"></button>
+					<button class="answers answer3"></button> 
+					<button class="answers answer4"></button> 
+				</div>
+
+				<div id="divAnswers">
+					<p class="timeRemaining">Time Remaining: <span id="elapsedTime"></span></p>
+					<p id="wrongMsg">Nope! Incorrect!</p>
+					<p id="correctMsg">That's correct!</p>
+					<p id="outOfTime">Time's Up!</p>
+					<p id="pCorrectAnswer">The correct answer is: <span></span></p>
+					<p id="pic"></p>
+				</div>
+
+				<div id="gameComplete">
+					<p>Game over! Here's your score:</p>
+					<p id="gameOverCorrect">Correct Answers: <span></span></p>
+					<p id="gameOverIncorrect">Incorrect Answers: <span></span></p>
+					<p id="unanswered">Unanswered Questions: <span></span></p>
+					<div id="restartPlaceholder"><button class="text-center btn btn-default">Restart?</button></div>
+				</div>
+			</div>
+	</div>	
+	
+			
+	<!--jQuery CDN-->
+	<script
+  src="https://code.jquery.com/jquery-3.1.1.js"
+  integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
+  crossorigin="anonymous"></script>
+	<!--Java script -->
+	<script type="text/javascript" src="assets/javascript/app.js"></script>
+</body>
+</html>
